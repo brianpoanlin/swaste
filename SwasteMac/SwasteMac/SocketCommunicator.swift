@@ -22,7 +22,7 @@ class SocketCommunicator: NSObject {
     var delegate: SocketCommunicatorDelegate?
 
     init(url: URL) {
-        manager = SocketManager(socketURL: url, config: [.log(true), .compress])
+        manager = SocketManager(socketURL: url, config: [.log(false), .compress])
         client = manager.defaultSocket
     }
     

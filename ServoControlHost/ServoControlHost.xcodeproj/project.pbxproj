@@ -25,7 +25,7 @@
 		AF7BEBC023237A1500B22883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7BEBC223237A1500B22883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7BEBC323237A1500B22883 /* ServoControlHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ServoControlHost.entitlements; sourceTree = "<group>"; };
-		AF7BEBC923237C0900B22883 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		AF7BEBC923237C0900B22883 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = ../../SwasteMac/SwasteMac/BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,7 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.ServoControlHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/ServoControlHost/ServoControlHost/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/SwasteMac/SwasteMac/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -374,7 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.ServoControlHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/ServoControlHost/ServoControlHost/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/SwasteMac/SwasteMac/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

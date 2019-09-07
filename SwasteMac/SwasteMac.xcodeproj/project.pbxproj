@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		1836941BFF3750715EBD0C70 /* Pods-SwasteMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwasteMac.debug.xcconfig"; path = "Target Support Files/Pods-SwasteMac/Pods-SwasteMac.debug.xcconfig"; sourceTree = "<group>"; };
+		AF20240723241C8E0029F392 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		AF7BEC3523238B2800B22883 /* SwasteMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwasteMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7BEC3823238B2800B22883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7BEC3A23238B2800B22883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 				AF7BEC3823238B2800B22883 /* AppDelegate.swift */,
 				AF7BEC3A23238B2800B22883 /* ViewController.swift */,
 				AF7BEC482323E05B00B22883 /* SocketCommunicator.swift */,
+				AF20240723241C8E0029F392 /* BridgingHeader.h */,
 				AF7BEC3C23238B2900B22883 /* Assets.xcassets */,
 				AF7BEC3E23238B2900B22883 /* Main.storyboard */,
 				AF7BEC4123238B2900B22883 /* Info.plist */,
@@ -352,8 +354,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.SwasteMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/SwasteMac/SwasteMac/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -373,8 +377,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.SwasteMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/SwasteMac/SwasteMac/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -6,7 +6,6 @@
 //  Copyright © 2019 Brian Lin. All rights reserved.
 //
 
-import Cocoa
 import SocketIO
 
 protocol SocketCommunicatorDelegate {
@@ -42,6 +41,6 @@ class SocketCommunicator: NSObject {
     }
     
     func sendData(value: Int) {
-        client.emit("value", value)
+        client.emit("update", value)
     }
 }
