@@ -25,7 +25,6 @@ var server = http.createServer(app);
  * Socket Handling
  */
 
-
 let io = require('socket.io')(server);
 
 io.sockets.on('connection', function (socket) {
@@ -35,8 +34,10 @@ io.sockets.on('connection', function (socket) {
     socket.on('update', function (data) {
       console.log("Update socket", data);
       socket.broadcast.emit('didUpdate', data);
+    }).on('qrScanned', function (data) {
+        socket.broadcast.emit('qrWasScanned', data);
     });
-});
+});s
 
 /**
  * Listen on provided port, on all network interfaces.
