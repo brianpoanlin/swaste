@@ -9,19 +9,26 @@
 import Cocoa
 import SocketIO
 
+protocol SocketCommunicatorDelegate {
+    func didConnect()
+    func didReceiveData(data: [Any])
+}
+
 class SocketCommunicator: NSObject {
     
-    let manager: SocketManager
-    let client: SocketIOClient
+    private let manager: SocketManager
+    private let client: SocketIOClient
+    
+    var delegate: SocketCommunicatorDelegate?
 
     init(url: URL) {
-        manager = SocketManager(socketURL: URL(string: "http://localhost:8080")!, config: [.log(true), .compress])
+        manager = SocketManager(socketURL: url, config: [.log(true), .compress])
         client = manager.defaultSocket
     }
     
     func connect() {
-        client.on(clientEvent: .connect) {data, ack in
-            print("socket connected!")
+        client.on(clientEvent: .connect) {[weak self] data, ack in
+            self?.delegate?.didConnect()
         }
         
         client.connect()
@@ -30,7 +37,7 @@ class SocketCommunicator: NSObject {
     
     private func addHandlers() {
         client.on("didUpdate") {[weak self] data, ack in
-            print(data)
+            self?.delegate?.didReceiveData(data: data)
         }
     }
     
