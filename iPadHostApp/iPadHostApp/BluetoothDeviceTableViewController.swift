@@ -10,9 +10,12 @@ import UIKit
 
 class BluetoothDeviceTableViewController: UITableViewController {
     var stuff = ["asdf","ASDFdf"]
+    
+    var timer = Timer()
     override func viewDidLoad() {
         super.viewDidLoad()
         singleton.scanBLEDevice()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:  #selector(self.objectFound), userInfo: nil, repeats: true)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,6 +25,10 @@ class BluetoothDeviceTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    @objc func objectFound(){
+        self.tableView.reloadData()
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -34,7 +41,7 @@ class BluetoothDeviceTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! BluetoothDevicesTableViewCell
         
         cell.label1.text = singleton.peripherals[indexPath.row].name
-        cell.label2.text = stuff[indexPath.row]
+//        cell.label2.text = stuff[indexPath.row]
         return cell
     }
 

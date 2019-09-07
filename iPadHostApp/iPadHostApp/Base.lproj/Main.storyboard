@@ -67,12 +67,36 @@
                         <viewLayoutGuide key="safeArea" id="V3i-X3-0Zk"/>
                     </view>
                     <connections>
-                        <segue destination="fX5-41-MxO" kind="show" identifier="ShowNearbyDevices" id="ZAg-Jv-VJl"/>
+                        <segue destination="lvr-6B-A2l" kind="show" identifier="ShowQRCode" id="hs4-zT-MQQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bY-Mo-OB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="758" y="18"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="Bwz-0O-bS3">
+            <objects>
+                <viewController id="lvr-6B-A2l" customClass="QRCodeViewController" customModule="iPadHostApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O7v-gL-JaV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fD9-3u-rDi">
+                                <rect key="frame" x="67" y="240" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qsl-p1-jkf"/>
+                    </view>
+                    <connections>
+                        <outlet property="qrCodeShow" destination="fD9-3u-rDi" id="aSg-b9-vKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U01-uk-jer" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="33"/>
         </scene>
         <!--Bluetooth Device Table View Controller-->
         <scene sceneID="2i7-mH-55W">
@@ -91,7 +115,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3X-rV-Ovu">
-                                            <rect key="frame" x="20" y="0.0" width="42" height="21"/>
+                                            <rect key="frame" x="20" y="0.0" width="273" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -120,7 +144,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7i2-Wc-Ykv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741.5812591508052" y="49.8046875"/>
+            <point key="canvasLocation" x="2623" y="168"/>
         </scene>
     </scenes>
 </document>

@@ -23,7 +23,9 @@
 		1A450F2723237D7E0018BC41 /* ProxSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F2623237D7E0018BC41 /* ProxSensor.m */; };
 		1A450F2A2323890D0018BC41 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F292323890D0018BC41 /* ImageClassifier.mlmodel */; };
 		1A450F2C232389300018BC41 /* ComputerVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F2B232389300018BC41 /* ComputerVision.swift */; };
-		1A450F682323EEF80018BC41 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F672323EEF80018BC41 /* VisionViewController.swift */; };
+		1A450F6A2323FC4F0018BC41 /* ObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F692323FC4F0018BC41 /* ObjectDetector.mlmodel */; };
+		1A450FA623241EC30018BC41 /* QRCodeGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450FA523241EC30018BC41 /* QRCodeGeneration.swift */; };
+		1A450FA823241F4F0018BC41 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450FA723241F4F0018BC41 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,9 @@
 		1A450F2823237E460018BC41 /* ProxSensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxSensor.h; sourceTree = "<group>"; };
 		1A450F292323890D0018BC41 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../../../Documents/swaste/ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		1A450F2B232389300018BC41 /* ComputerVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerVision.swift; sourceTree = "<group>"; };
-		1A450F672323EEF80018BC41 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		1A450F692323FC4F0018BC41 /* ObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ObjectDetector.mlmodel; path = ../../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/ObjectDetector.mlmodel; sourceTree = "<group>"; };
+		1A450FA523241EC30018BC41 /* QRCodeGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGeneration.swift; sourceTree = "<group>"; };
+		1A450FA723241F4F0018BC41 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +127,6 @@
 			children = (
 				1A450EEA2323714E0018BC41 /* AppDelegate.swift */,
 				1A450EEC2323714E0018BC41 /* ViewController.swift */,
-				1A450F672323EEF80018BC41 /* VisionViewController.swift */,
 				1A450F2323237C960018BC41 /* ProximitySensor.swift */,
 				1A450F2823237E460018BC41 /* ProxSensor.h */,
 				1A450F2623237D7E0018BC41 /* ProxSensor.m */,
@@ -131,7 +134,10 @@
 				1A450F1D2323749B0018BC41 /* ClassifierResultViewController.swift */,
 				1A450F2B232389300018BC41 /* ComputerVision.swift */,
 				1A450F292323890D0018BC41 /* ImageClassifier.mlmodel */,
+				1A450F692323FC4F0018BC41 /* ObjectDetector.mlmodel */,
 				1A450EEE2323714E0018BC41 /* Main.storyboard */,
+				1A450FA723241F4F0018BC41 /* QRCodeViewController.swift */,
+				1A450FA523241EC30018BC41 /* QRCodeGeneration.swift */,
 				1A450F1F2323763B0018BC41 /* BluetoothDeviceTableViewController.swift */,
 				1A450F21232379680018BC41 /* BluetoothDevicesTableViewCell.swift */,
 				1A450EF12323714E0018BC41 /* Assets.xcassets */,
@@ -302,8 +308,9 @@
 			files = (
 				1A450F202323763B0018BC41 /* BluetoothDeviceTableViewController.swift in Sources */,
 				1A450EED2323714E0018BC41 /* ViewController.swift in Sources */,
-				1A450F682323EEF80018BC41 /* VisionViewController.swift in Sources */,
+				1A450FA823241F4F0018BC41 /* QRCodeViewController.swift in Sources */,
 				1A450F2723237D7E0018BC41 /* ProxSensor.m in Sources */,
+				1A450FA623241EC30018BC41 /* QRCodeGeneration.swift in Sources */,
 				1A450F19232372BB0018BC41 /* BluetoothManager.swift in Sources */,
 				1A450F1E2323749B0018BC41 /* ClassifierResultViewController.swift in Sources */,
 				1A450F22232379680018BC41 /* BluetoothDevicesTableViewCell.swift in Sources */,
@@ -311,6 +318,7 @@
 				1A450F2A2323890D0018BC41 /* ImageClassifier.mlmodel in Sources */,
 				1A450F2C232389300018BC41 /* ComputerVision.swift in Sources */,
 				1A450F2423237C960018BC41 /* ProximitySensor.swift in Sources */,
+				1A450F6A2323FC4F0018BC41 /* ObjectDetector.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

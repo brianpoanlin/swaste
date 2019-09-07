@@ -1,5 +1,5 @@
 //
-//  ClassifierResultViewController.swift
+//  QRCodeViewController.swift
 //  iPadHostApp
 //
 //  Created by Nikos Mouchtaris on 9/7/19.
@@ -8,19 +8,18 @@
 
 import UIKit
 
-class ClassifierResultViewController: UIViewController {
-
-    var timer = Timer()
+class QRCodeViewController: UIViewController {
+    @IBOutlet weak var qrCodeShow: UIImageView!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:  #selector(self.objectFound), userInfo: nil, repeats: true)
         
+        super.viewDidLoad()
+        
+        var ok = QRCodeGeneration()
+        qrCodeShow.image = ok.getQRCode()
+        // Do any additional setup after loading the view.
     }
     
-    @objc func objectFound(){
-        performSegue(withIdentifier: "ShowQRCode", sender: self)
-    }
 
     /*
     // MARK: - Navigation

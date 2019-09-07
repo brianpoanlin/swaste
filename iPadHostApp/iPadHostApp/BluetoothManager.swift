@@ -50,12 +50,14 @@ extension BluetoothManager: CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if (!peripherals.contains(peripheral)){
-            peripherals.append(peripheral)
-            if(peripheral.name != nil){
-                print(peripheral.name!)
-            }
+        if(peripheral.name != nil){
             
+            if (!peripherals.contains(peripheral)){
+                peripherals.append(peripheral)
+                
+                
+            }
+            print(peripheral.name!)
         }
         
     }
