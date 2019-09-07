@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A450EEB2323714E0018BC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450EEA2323714E0018BC41 /* AppDelegate.swift */; };
+		1A450EED2323714E0018BC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450EEC2323714E0018BC41 /* ViewController.swift */; };
+		1A450EF02323714E0018BC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A450EEE2323714E0018BC41 /* Main.storyboard */; };
+		1A450EF22323714E0018BC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A450EF12323714E0018BC41 /* Assets.xcassets */; };
+		1A450EF52323714E0018BC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A450EF32323714E0018BC41 /* LaunchScreen.storyboard */; };
+		1A450F002323714E0018BC41 /* iPadHostAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450EFF2323714E0018BC41 /* iPadHostAppTests.swift */; };
+		1A450F0B2323714F0018BC41 /* iPadHostAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F0A2323714F0018BC41 /* iPadHostAppUITests.swift */; };
+		1A450F19232372BB0018BC41 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F18232372BB0018BC41 /* BluetoothManager.swift */; };
+		1A450F1C232372E40018BC41 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A450F1B232372E40018BC41 /* CoreBluetooth.framework */; };
+		1A450F1E2323749B0018BC41 /* ClassifierResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F1D2323749B0018BC41 /* ClassifierResultViewController.swift */; };
+		1A450F202323763B0018BC41 /* BluetoothDeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F1F2323763B0018BC41 /* BluetoothDeviceTableViewController.swift */; };
+		1A450F22232379680018BC41 /* BluetoothDevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F21232379680018BC41 /* BluetoothDevicesTableViewCell.swift */; };
+		1A450F2423237C960018BC41 /* ProximitySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F2323237C960018BC41 /* ProximitySensor.swift */; };
+		1A450F2723237D7E0018BC41 /* ProxSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F2623237D7E0018BC41 /* ProxSensor.m */; };
+		1A450F2A2323890D0018BC41 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F292323890D0018BC41 /* ImageClassifier.mlmodel */; };
+		1A450F2C232389300018BC41 /* ComputerVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F2B232389300018BC41 /* ComputerVision.swift */; };
+		1A450F682323EEF80018BC41 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A450F672323EEF80018BC41 /* VisionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A450EFC2323714E0018BC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A450EDF2323714E0018BC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A450EE62323714E0018BC41;
+			remoteInfo = iPadHostApp;
+		};
+		1A450F072323714F0018BC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A450EDF2323714E0018BC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A450EE62323714E0018BC41;
+			remoteInfo = iPadHostApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A450EE72323714E0018BC41 /* iPadHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A450EEA2323714E0018BC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A450EEC2323714E0018BC41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A450EEF2323714E0018BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A450EF12323714E0018BC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A450EF42323714E0018BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A450EF62323714E0018BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A450EFB2323714E0018BC41 /* iPadHostAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPadHostAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A450EFF2323714E0018BC41 /* iPadHostAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadHostAppTests.swift; sourceTree = "<group>"; };
+		1A450F012323714E0018BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A450F062323714F0018BC41 /* iPadHostAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPadHostAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A450F0A2323714F0018BC41 /* iPadHostAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadHostAppUITests.swift; sourceTree = "<group>"; };
+		1A450F0C2323714F0018BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A450F18232372BB0018BC41 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		1A450F1B232372E40018BC41 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1A450F1D2323749B0018BC41 /* ClassifierResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierResultViewController.swift; sourceTree = "<group>"; };
+		1A450F1F2323763B0018BC41 /* BluetoothDeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceTableViewController.swift; sourceTree = "<group>"; };
+		1A450F21232379680018BC41 /* BluetoothDevicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevicesTableViewCell.swift; sourceTree = "<group>"; };
+		1A450F2323237C960018BC41 /* ProximitySensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximitySensor.swift; sourceTree = "<group>"; };
+		1A450F2523237D7E0018BC41 /* iPadHostApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPadHostApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A450F2623237D7E0018BC41 /* ProxSensor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxSensor.m; sourceTree = "<group>"; };
+		1A450F2823237E460018BC41 /* ProxSensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxSensor.h; sourceTree = "<group>"; };
+		1A450F292323890D0018BC41 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../../../Documents/swaste/ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		1A450F2B232389300018BC41 /* ComputerVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerVision.swift; sourceTree = "<group>"; };
+		1A450F672323EEF80018BC41 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A450EE42323714E0018BC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A450F1C232372E40018BC41 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A450EF82323714E0018BC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A450F032323714F0018BC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A450EDE2323714E0018BC41 = {
+			isa = PBXGroup;
+			children = (
+				1A450EE92323714E0018BC41 /* iPadHostApp */,
+				1A450EFE2323714E0018BC41 /* iPadHostAppTests */,
+				1A450F092323714F0018BC41 /* iPadHostAppUITests */,
+				1A450EE82323714E0018BC41 /* Products */,
+				1A450F1A232372E40018BC41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A450EE82323714E0018BC41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A450EE72323714E0018BC41 /* iPadHostApp.app */,
+				1A450EFB2323714E0018BC41 /* iPadHostAppTests.xctest */,
+				1A450F062323714F0018BC41 /* iPadHostAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A450EE92323714E0018BC41 /* iPadHostApp */ = {
+			isa = PBXGroup;
+			children = (
+				1A450EEA2323714E0018BC41 /* AppDelegate.swift */,
+				1A450EEC2323714E0018BC41 /* ViewController.swift */,
+				1A450F672323EEF80018BC41 /* VisionViewController.swift */,
+				1A450F2323237C960018BC41 /* ProximitySensor.swift */,
+				1A450F2823237E460018BC41 /* ProxSensor.h */,
+				1A450F2623237D7E0018BC41 /* ProxSensor.m */,
+				1A450F18232372BB0018BC41 /* BluetoothManager.swift */,
+				1A450F1D2323749B0018BC41 /* ClassifierResultViewController.swift */,
+				1A450F2B232389300018BC41 /* ComputerVision.swift */,
+				1A450F292323890D0018BC41 /* ImageClassifier.mlmodel */,
+				1A450EEE2323714E0018BC41 /* Main.storyboard */,
+				1A450F1F2323763B0018BC41 /* BluetoothDeviceTableViewController.swift */,
+				1A450F21232379680018BC41 /* BluetoothDevicesTableViewCell.swift */,
+				1A450EF12323714E0018BC41 /* Assets.xcassets */,
+				1A450EF32323714E0018BC41 /* LaunchScreen.storyboard */,
+				1A450EF62323714E0018BC41 /* Info.plist */,
+				1A450F2523237D7E0018BC41 /* iPadHostApp-Bridging-Header.h */,
+			);
+			path = iPadHostApp;
+			sourceTree = "<group>";
+		};
+		1A450EFE2323714E0018BC41 /* iPadHostAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A450EFF2323714E0018BC41 /* iPadHostAppTests.swift */,
+				1A450F012323714E0018BC41 /* Info.plist */,
+			);
+			path = iPadHostAppTests;
+			sourceTree = "<group>";
+		};
+		1A450F092323714F0018BC41 /* iPadHostAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A450F0A2323714F0018BC41 /* iPadHostAppUITests.swift */,
+				1A450F0C2323714F0018BC41 /* Info.plist */,
+			);
+			path = iPadHostAppUITests;
+			sourceTree = "<group>";
+		};
+		1A450F1A232372E40018BC41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A450F1B232372E40018BC41 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A450EE62323714E0018BC41 /* iPadHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A450F0F2323714F0018BC41 /* Build configuration list for PBXNativeTarget "iPadHostApp" */;
+			buildPhases = (
+				1A450EE32323714E0018BC41 /* Sources */,
+				1A450EE42323714E0018BC41 /* Frameworks */,
+				1A450EE52323714E0018BC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPadHostApp;
+			productName = iPadHostApp;
+			productReference = 1A450EE72323714E0018BC41 /* iPadHostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A450EFA2323714E0018BC41 /* iPadHostAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A450F122323714F0018BC41 /* Build configuration list for PBXNativeTarget "iPadHostAppTests" */;
+			buildPhases = (
+				1A450EF72323714E0018BC41 /* Sources */,
+				1A450EF82323714E0018BC41 /* Frameworks */,
+				1A450EF92323714E0018BC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A450EFD2323714E0018BC41 /* PBXTargetDependency */,
+			);
+			name = iPadHostAppTests;
+			productName = iPadHostAppTests;
+			productReference = 1A450EFB2323714E0018BC41 /* iPadHostAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A450F052323714F0018BC41 /* iPadHostAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A450F152323714F0018BC41 /* Build configuration list for PBXNativeTarget "iPadHostAppUITests" */;
+			buildPhases = (
+				1A450F022323714F0018BC41 /* Sources */,
+				1A450F032323714F0018BC41 /* Frameworks */,
+				1A450F042323714F0018BC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A450F082323714F0018BC41 /* PBXTargetDependency */,
+			);
+			name = iPadHostAppUITests;
+			productName = iPadHostAppUITests;
+			productReference = 1A450F062323714F0018BC41 /* iPadHostAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A450EDF2323714E0018BC41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Nikos Mouchtaris";
+				TargetAttributes = {
+					1A450EE62323714E0018BC41 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					1A450EFA2323714E0018BC41 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1A450EE62323714E0018BC41;
+					};
+					1A450F052323714F0018BC41 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 1A450EE62323714E0018BC41;
+					};
+				};
+			};
+			buildConfigurationList = 1A450EE22323714E0018BC41 /* Build configuration list for PBXProject "iPadHostApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A450EDE2323714E0018BC41;
+			productRefGroup = 1A450EE82323714E0018BC41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A450EE62323714E0018BC41 /* iPadHostApp */,
+				1A450EFA2323714E0018BC41 /* iPadHostAppTests */,
+				1A450F052323714F0018BC41 /* iPadHostAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A450EE52323714E0018BC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A450EF52323714E0018BC41 /* LaunchScreen.storyboard in Resources */,
+				1A450EF22323714E0018BC41 /* Assets.xcassets in Resources */,
+				1A450EF02323714E0018BC41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A450EF92323714E0018BC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A450F042323714F0018BC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A450EE32323714E0018BC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A450F202323763B0018BC41 /* BluetoothDeviceTableViewController.swift in Sources */,
+				1A450EED2323714E0018BC41 /* ViewController.swift in Sources */,
+				1A450F682323EEF80018BC41 /* VisionViewController.swift in Sources */,
+				1A450F2723237D7E0018BC41 /* ProxSensor.m in Sources */,
+				1A450F19232372BB0018BC41 /* BluetoothManager.swift in Sources */,
+				1A450F1E2323749B0018BC41 /* ClassifierResultViewController.swift in Sources */,
+				1A450F22232379680018BC41 /* BluetoothDevicesTableViewCell.swift in Sources */,
+				1A450EEB2323714E0018BC41 /* AppDelegate.swift in Sources */,
+				1A450F2A2323890D0018BC41 /* ImageClassifier.mlmodel in Sources */,
+				1A450F2C232389300018BC41 /* ComputerVision.swift in Sources */,
+				1A450F2423237C960018BC41 /* ProximitySensor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A450EF72323714E0018BC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A450F002323714E0018BC41 /* iPadHostAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A450F022323714F0018BC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A450F0B2323714F0018BC41 /* iPadHostAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A450EFD2323714E0018BC41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A450EE62323714E0018BC41 /* iPadHostApp */;
+			targetProxy = 1A450EFC2323714E0018BC41 /* PBXContainerItemProxy */;
+		};
+		1A450F082323714F0018BC41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A450EE62323714E0018BC41 /* iPadHostApp */;
+			targetProxy = 1A450F072323714F0018BC41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A450EEE2323714E0018BC41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A450EEF2323714E0018BC41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A450EF32323714E0018BC41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A450EF42323714E0018BC41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A450F0D2323714F0018BC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A450F0E2323714F0018BC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A450F102323714F0018BC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9GZK3CLYY;
+				INFOPLIST_FILE = iPadHostApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikosm.iPadHostAppPlease;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPadHostApp/iPadHostApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A450F112323714F0018BC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9GZK3CLYY;
+				INFOPLIST_FILE = iPadHostApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikosm.iPadHostAppPlease;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPadHostApp/iPadHostApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A450F132323714F0018BC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iPadHostAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikosm.iPadHostAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPadHostApp.app/iPadHostApp";
+			};
+			name = Debug;
+		};
+		1A450F142323714F0018BC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iPadHostAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikosm.iPadHostAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPadHostApp.app/iPadHostApp";
+			};
+			name = Release;
+		};
+		1A450F162323714F0018BC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iPadHostAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikosm.iPadHostAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iPadHostApp;
+			};
+			name = Debug;
+		};
+		1A450F172323714F0018BC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = iPadHostAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nikosm.iPadHostAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iPadHostApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A450EE22323714E0018BC41 /* Build configuration list for PBXProject "iPadHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A450F0D2323714F0018BC41 /* Debug */,
+				1A450F0E2323714F0018BC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A450F0F2323714F0018BC41 /* Build configuration list for PBXNativeTarget "iPadHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A450F102323714F0018BC41 /* Debug */,
+				1A450F112323714F0018BC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A450F122323714F0018BC41 /* Build configuration list for PBXNativeTarget "iPadHostAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A450F132323714F0018BC41 /* Debug */,
+				1A450F142323714F0018BC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A450F152323714F0018BC41 /* Build configuration list for PBXNativeTarget "iPadHostAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A450F162323714F0018BC41 /* Debug */,
+				1A450F172323714F0018BC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A450EDF2323714E0018BC41 /* Project object */;
+}
