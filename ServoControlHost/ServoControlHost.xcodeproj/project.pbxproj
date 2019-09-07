@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ADE4429E595CD9140456F0C /* Pods_ServoControlHost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178DFCCDA519ED4B2E7BA01C /* Pods_ServoControlHost.framework */; };
+		AF7BEBBA23237A1200B22883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBB923237A1200B22883 /* AppDelegate.swift */; };
+		AF7BEBBC23237A1200B22883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBBB23237A1200B22883 /* ViewController.swift */; };
+		AF7BEBBE23237A1500B22883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7BEBBD23237A1500B22883 /* Assets.xcassets */; };
+		AF7BEBC123237A1500B22883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7BEBBF23237A1500B22883 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		178DFCCDA519ED4B2E7BA01C /* Pods_ServoControlHost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServoControlHost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E4777A9046C2EEF3B9651D /* Pods-ServoControlHost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServoControlHost.release.xcconfig"; path = "Target Support Files/Pods-ServoControlHost/Pods-ServoControlHost.release.xcconfig"; sourceTree = "<group>"; };
+		AB91A40135AA2B1B30F2DB58 /* Pods-ServoControlHost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServoControlHost.debug.xcconfig"; path = "Target Support Files/Pods-ServoControlHost/Pods-ServoControlHost.debug.xcconfig"; sourceTree = "<group>"; };
+		AF7BEBB623237A1200B22883 /* ServoControlHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServoControlHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7BEBB923237A1200B22883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF7BEBBB23237A1200B22883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF7BEBBD23237A1500B22883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF7BEBC023237A1500B22883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF7BEBC223237A1500B22883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7BEBC323237A1500B22883 /* ServoControlHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ServoControlHost.entitlements; sourceTree = "<group>"; };
+		AF7BEBC923237C0900B22883 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF7BEBB323237A1200B22883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADE4429E595CD9140456F0C /* Pods_ServoControlHost.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E414BDEC3455F00EE81C2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				178DFCCDA519ED4B2E7BA01C /* Pods_ServoControlHost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF7BEBAD23237A1200B22883 = {
+			isa = PBXGroup;
+			children = (
+				AF7BEBB823237A1200B22883 /* ServoControlHost */,
+				AF7BEBB723237A1200B22883 /* Products */,
+				BF8FAD833A56398850F53F92 /* Pods */,
+				14E414BDEC3455F00EE81C2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF7BEBB723237A1200B22883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF7BEBB623237A1200B22883 /* ServoControlHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF7BEBB823237A1200B22883 /* ServoControlHost */ = {
+			isa = PBXGroup;
+			children = (
+				AF7BEBB923237A1200B22883 /* AppDelegate.swift */,
+				AF7BEBBB23237A1200B22883 /* ViewController.swift */,
+				AF7BEBC923237C0900B22883 /* BridgingHeader.h */,
+				AF7BEBBD23237A1500B22883 /* Assets.xcassets */,
+				AF7BEBBF23237A1500B22883 /* Main.storyboard */,
+				AF7BEBC223237A1500B22883 /* Info.plist */,
+				AF7BEBC323237A1500B22883 /* ServoControlHost.entitlements */,
+			);
+			path = ServoControlHost;
+			sourceTree = "<group>";
+		};
+		BF8FAD833A56398850F53F92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB91A40135AA2B1B30F2DB58 /* Pods-ServoControlHost.debug.xcconfig */,
+				49E4777A9046C2EEF3B9651D /* Pods-ServoControlHost.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF7BEBB523237A1200B22883 /* ServoControlHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7BEBC623237A1500B22883 /* Build configuration list for PBXNativeTarget "ServoControlHost" */;
+			buildPhases = (
+				5148B18C885C4089F8DCF161 /* [CP] Check Pods Manifest.lock */,
+				AF7BEBB223237A1200B22883 /* Sources */,
+				AF7BEBB323237A1200B22883 /* Frameworks */,
+				AF7BEBB423237A1200B22883 /* Resources */,
+				1B973E617F12D7D2293BFC19 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServoControlHost;
+			productName = ServoControlHost;
+			productReference = AF7BEBB623237A1200B22883 /* ServoControlHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF7BEBAE23237A1200B22883 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Brian Lin";
+				TargetAttributes = {
+					AF7BEBB523237A1200B22883 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = AF7BEBB123237A1200B22883 /* Build configuration list for PBXProject "ServoControlHost" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF7BEBAD23237A1200B22883;
+			productRefGroup = AF7BEBB723237A1200B22883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF7BEBB523237A1200B22883 /* ServoControlHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF7BEBB423237A1200B22883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7BEBBE23237A1500B22883 /* Assets.xcassets in Resources */,
+				AF7BEBC123237A1500B22883 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B973E617F12D7D2293BFC19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ServoControlHost/Pods-ServoControlHost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ServoControlHost/Pods-ServoControlHost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ServoControlHost/Pods-ServoControlHost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5148B18C885C4089F8DCF161 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ServoControlHost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF7BEBB223237A1200B22883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7BEBBC23237A1200B22883 /* ViewController.swift in Sources */,
+				AF7BEBBA23237A1200B22883 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF7BEBBF23237A1500B22883 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7BEBC023237A1500B22883 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF7BEBC423237A1500B22883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF7BEBC523237A1500B22883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AF7BEBC723237A1500B22883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB91A40135AA2B1B30F2DB58 /* Pods-ServoControlHost.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ServoControlHost/ServoControlHost.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TY684T7BUD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ServoControlHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.ServoControlHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/ServoControlHost/ServoControlHost/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AF7BEBC823237A1500B22883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E4777A9046C2EEF3B9651D /* Pods-ServoControlHost.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ServoControlHost/ServoControlHost.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TY684T7BUD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ServoControlHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianlin.ServoControlHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/brianlin/Documents/Projects/swaste/ServoControlHost/ServoControlHost/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF7BEBB123237A1200B22883 /* Build configuration list for PBXProject "ServoControlHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7BEBC423237A1500B22883 /* Debug */,
+				AF7BEBC523237A1500B22883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7BEBC623237A1500B22883 /* Build configuration list for PBXNativeTarget "ServoControlHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7BEBC723237A1500B22883 /* Debug */,
+				AF7BEBC823237A1500B22883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF7BEBAE23237A1200B22883 /* Project object */;
+}
