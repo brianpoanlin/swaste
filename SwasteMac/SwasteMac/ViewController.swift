@@ -14,7 +14,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let url = URL(string: "http://localhost:8080") else {
+        guard let url = URL(string: "http://ec2-54-221-167-75.compute-1.amazonaws.com:3000") else {
             return
         }
         
