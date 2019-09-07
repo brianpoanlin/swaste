@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF577CBC2324254100B859F0 /* SwasteConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF577CBB2324254100B859F0 /* SwasteConstants.swift */; };
+		AF577CC02324299F00B859F0 /* IMG_2373.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF577CBF2324299F00B859F0 /* IMG_2373.jpg */; };
 		AF7BEBF923238AD300B22883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBF823238AD300B22883 /* AppDelegate.swift */; };
 		AF7BEBFB23238AD300B22883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */; };
-		AF7BEBFD23238AD300B22883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBFC23238AD300B22883 /* ViewController.swift */; };
+		AF7BEBFD23238AD300B22883 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBFC23238AD300B22883 /* MainViewController.swift */; };
 		AF7BEC0023238AD300B22883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7BEBFE23238AD300B22883 /* Main.storyboard */; };
 		AF7BEC0223238AD500B22883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7BEC0123238AD500B22883 /* Assets.xcassets */; };
 		AF7BEC0523238AD500B22883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7BEC0323238AD500B22883 /* LaunchScreen.storyboard */; };
@@ -20,10 +22,12 @@
 /* Begin PBXFileReference section */
 		130DB7B281009D8E80426B7F /* Pods_SwasteMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwasteMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		299CAB6C93456A506940E679 /* Pods-SwasteMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwasteMobile.release.xcconfig"; path = "Target Support Files/Pods-SwasteMobile/Pods-SwasteMobile.release.xcconfig"; sourceTree = "<group>"; };
+		AF577CBB2324254100B859F0 /* SwasteConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwasteConstants.swift; sourceTree = "<group>"; };
+		AF577CBF2324299F00B859F0 /* IMG_2373.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2373.jpg; sourceTree = "<group>"; };
 		AF7BEBF523238AD300B22883 /* SwasteMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwasteMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7BEBF823238AD300B22883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF7BEBFC23238AD300B22883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF7BEBFC23238AD300B22883 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AF7BEBFF23238AD300B22883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7BEC0123238AD500B22883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7BEC0423238AD500B22883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF577CBD2324268000B859F0 /* ApplicationLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				AF7BEBF823238AD300B22883 /* AppDelegate.swift */,
+				AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */,
+			);
+			path = ApplicationLifeCycle;
+			sourceTree = "<group>";
+		};
+		AF577CBE2324269100B859F0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF7BEBFC23238AD300B22883 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AF7BEBEC23238AD200B22883 = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +103,15 @@
 		AF7BEBF723238AD300B22883 /* SwasteMobile */ = {
 			isa = PBXGroup;
 			children = (
-				AF7BEBF823238AD300B22883 /* AppDelegate.swift */,
-				AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */,
-				AF7BEBFC23238AD300B22883 /* ViewController.swift */,
+				AF577CBE2324269100B859F0 /* ViewControllers */,
+				AF577CBD2324268000B859F0 /* ApplicationLifeCycle */,
 				AF7BEC4A2323EAAD00B22883 /* SocketCommunicator.swift */,
+				AF577CBF2324299F00B859F0 /* IMG_2373.jpg */,
 				AF7BEBFE23238AD300B22883 /* Main.storyboard */,
 				AF7BEC0123238AD500B22883 /* Assets.xcassets */,
 				AF7BEC0323238AD500B22883 /* LaunchScreen.storyboard */,
 				AF7BEC0623238AD500B22883 /* Info.plist */,
+				AF577CBB2324254100B859F0 /* SwasteConstants.swift */,
 			);
 			path = SwasteMobile;
 			sourceTree = "<group>";
@@ -156,6 +178,7 @@
 			files = (
 				AF7BEC0523238AD500B22883 /* LaunchScreen.storyboard in Resources */,
 				AF7BEC0223238AD500B22883 /* Assets.xcassets in Resources */,
+				AF577CC02324299F00B859F0 /* IMG_2373.jpg in Resources */,
 				AF7BEC0023238AD300B22883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7BEBFD23238AD300B22883 /* ViewController.swift in Sources */,
+				AF7BEBFD23238AD300B22883 /* MainViewController.swift in Sources */,
+				AF577CBC2324254100B859F0 /* SwasteConstants.swift in Sources */,
 				AF7BEC4B2323EAAD00B22883 /* SocketCommunicator.swift in Sources */,
 				AF7BEBF923238AD300B22883 /* AppDelegate.swift in Sources */,
 				AF7BEBFB23238AD300B22883 /* SceneDelegate.swift in Sources */,

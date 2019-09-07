@@ -8,12 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     var socket: SocketCommunicator?
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = SwasteThemeColors.lavender
+        
         guard let url = URL(string: "https://www.swaste.tech") else {
             return
         }
@@ -46,7 +53,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: SocketCommunicatorDelegate {
+extension MainViewController: SocketCommunicatorDelegate {
     func didConnect() {
         print("Socket connected!")
     }
