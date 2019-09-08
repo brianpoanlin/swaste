@@ -14,9 +14,9 @@
             filePath = "SwasteMobile/Detector/ObjectDetector.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
-            landmarkName = "captureOutput(_:didOutput:from:)"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
+            landmarkName = "updateLayerGeometry()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -24,15 +24,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BE33BB02-189A-4AEA-A01C-993FA21ADFDB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwasteMobile/Detector/ObjectDetector.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
-            landmarkName = "getResultArray(_:)"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "setupVision()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -46,9 +46,9 @@
             filePath = "SwasteMobile/Detector/ObjectDetector.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "setupVision()"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "exifOrientationFromDeviceOrientation()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -56,20 +56,20 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F0C5E7A6-636E-4491-846A-E531F0DA72D4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwasteMobile/ViewControllers/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "promptLandfill()"
             landmarkType = "7">
             <Locations>
                <Location
                   uuid = "F0C5E7A6-636E-4491-846A-E531F0DA72D4 - 5948197b7aaa5b18"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SwasteMobile.MainViewController.promptLandfill() -&gt; ()"
@@ -78,13 +78,13 @@
                   urlString = "file:///Users/brianlin/Documents/Projects/swaste/SwasteMobile/SwasteMobile/ViewControllers/MainViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
                   offsetFromSymbolStart = "1080">
                </Location>
                <Location
                   uuid = "F0C5E7A6-636E-4491-846A-E531F0DA72D4 - 786e6af9f955464"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in SwasteMobile.MainViewController.promptLandfill() -&gt; ()"
@@ -93,8 +93,8 @@
                   urlString = "file:///Users/brianlin/Documents/Projects/swaste/SwasteMobile/SwasteMobile/ViewControllers/MainViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "157"
-                  endingLineNumber = "157"
+                  startingLineNumber = "211"
+                  endingLineNumber = "211"
                   offsetFromSymbolStart = "64">
                </Location>
             </Locations>
@@ -126,8 +126,8 @@
             filePath = "SwasteMobile/ViewControllers/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "didReceiveData(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "SwasteMobile/ViewControllers/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -273,6 +273,22 @@
             startingLineNumber = "46"
             endingLineNumber = "46"
             landmarkName = "sendRequest(request:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBE1CD6C-B41D-460A-9D92-C78B5E0B784A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwasteMobile/Detector/ObjectDetector.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "setupVision()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

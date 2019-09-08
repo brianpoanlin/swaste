@@ -28,7 +28,7 @@ class ViewController: NSViewController {
         serialPort?.delegate = self
         serialPort?.open()
         
-        sendString("1")
+//        sendString("1")
     }
     
     func sendString(_ string: String) {

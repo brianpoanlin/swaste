@@ -25,6 +25,23 @@ class ObjectDetector: NSObject {
     private var previewLayer: AVCaptureVideoPreviewLayer! = nil
     private let videoDataOutput = AVCaptureVideoDataOutput()
     var detectionOverlay: CALayer! = nil
+    private var isPaused = false
+    
+    let compostHash: [String: Int] = [
+        "apple"     :   1,
+        "banana"    :   1,
+    ]
+    
+    let recycleHash: [String: Int] = [
+        "soda can"                  :   1,
+        "Hunter's water bottles"    :   1,
+        "glass"                     :   1
+    ]
+    
+    let trashHash: [String: Int] = [
+        "coffeecups"      :   1,
+        "plasic bag"     :   1,
+    ]
     
     // Vision parts
     var requests = [VNRequest]()
@@ -39,6 +56,14 @@ class ObjectDetector: NSObject {
         
         // start the capture
         startCaptureSession()
+    }
+    
+    func pause() {
+        isPaused = true
+    }
+    
+    func resume() {
+        isPaused = false
     }
     
     func setupAVCapture() {
@@ -132,6 +157,7 @@ class ObjectDetector: NSObject {
             // Setup Vision parts
             let error: NSError! = nil
             
+            
             guard let modelURL = Bundle.main.url(forResource: "ImageClassifier", withExtension: "mlmodelc") else {
                 return NSError(domain: "VisionObjectRecognitionViewController", code: -1, userInfo: [NSLocalizedDescriptionKey: "Model file is missing"])
             }
@@ -140,20 +166,37 @@ class ObjectDetector: NSObject {
                 let objectRecognition = VNCoreMLRequest(model: visionModel, completionHandler: { (request, error) in
                     DispatchQueue.main.async(execute: {
                         // perform all the UI updates on the main queue
+                        if self.isPaused {
+                            return
+                        }
+                        
                         if let results = request.results {
                             for observation in results {
                                 guard let objectObservation = observation as? VNClassificationObservation else {
                                     continue
                                 }
-                                if(objectObservation.confidence > 0.75) {
+                                if(objectObservation.confidence > 0.45) {
                                     print(objectObservation.identifier)
-                                    if objectObservation.identifier == "plastic" {
+                                    let id = objectObservation.identifier
+                                    if let _ = self.recycleHash[id] {
                                         self.delegate?.promptRecycle()
-                                    } else if objectObservation.identifier == "cardboard" {
+                                    }
+                                    
+                                    if let _ = self.compostHash[id] {
                                         self.delegate?.promptCompost()
-                                    } else if objectObservation.identifier == "trash" {
+                                    }
+                                    
+                                    if let _ = self.trashHash[id] {
                                         self.delegate?.promptLandfill()
                                     }
+                                             
+//                                    if objectObservation.identifier == "soda can" || objectObservation.identifier == "Hunter's water bottles" {
+//                                        self.delegate?.promptRecycle()
+//                                    } else if objectObservation.identifier == "banana" {
+//                                        self.delegate?.promptCompost()
+//                                    } else if objectObservation.identifier == "trash" {
+//                                        self.delegate?.promptLandfill()
+//                                    }
                                 }
                             }
                         }
