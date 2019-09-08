@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF48798D2324584000015E16 /* green-checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = AF48798C2324584000015E16 /* green-checkmark.png */; };
+		AF487990232459F200015E16 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF48798F232459F200015E16 /* UserSession.swift */; };
 		AF577CBC2324254100B859F0 /* SwasteConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF577CBB2324254100B859F0 /* SwasteConstants.swift */; };
 		AF577CC02324299F00B859F0 /* IMG_2373.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF577CBF2324299F00B859F0 /* IMG_2373.jpg */; };
+		AF577CC423242CE300B859F0 /* swaste-logo 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AF577CC323242CE300B859F0 /* swaste-logo 2.png */; };
+		AF577CCD232430C300B859F0 /* ObjectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF577CCC232430C300B859F0 /* ObjectDetector.swift */; };
+		AF577CCF2324360800B859F0 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AF577CC823242F6200B859F0 /* ImageClassifier.mlmodel */; };
+		AF577CD12324379D00B859F0 /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF577CD02324379D00B859F0 /* InfoCard.swift */; };
+		AF5ADC5E2324BF9800816012 /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5ADC5D2324BF9800816012 /* NetworkCommunication.swift */; };
+		AF5ADC602324C48300816012 /* QRCodeGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5ADC5F2324C48300816012 /* QRCodeGeneration.swift */; };
+		AF5ADC622324C50200816012 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5ADC612324C50200816012 /* QRCodeViewController.swift */; };
 		AF7BEBF923238AD300B22883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBF823238AD300B22883 /* AppDelegate.swift */; };
 		AF7BEBFB23238AD300B22883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */; };
 		AF7BEBFD23238AD300B22883 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BEBFC23238AD300B22883 /* MainViewController.swift */; };
@@ -22,8 +31,17 @@
 /* Begin PBXFileReference section */
 		130DB7B281009D8E80426B7F /* Pods_SwasteMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwasteMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		299CAB6C93456A506940E679 /* Pods-SwasteMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwasteMobile.release.xcconfig"; path = "Target Support Files/Pods-SwasteMobile/Pods-SwasteMobile.release.xcconfig"; sourceTree = "<group>"; };
+		AF48798C2324584000015E16 /* green-checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-checkmark.png"; sourceTree = "<group>"; };
+		AF48798F232459F200015E16 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		AF577CBB2324254100B859F0 /* SwasteConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwasteConstants.swift; sourceTree = "<group>"; };
 		AF577CBF2324299F00B859F0 /* IMG_2373.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2373.jpg; sourceTree = "<group>"; };
+		AF577CC323242CE300B859F0 /* swaste-logo 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swaste-logo 2.png"; sourceTree = "<group>"; };
+		AF577CC823242F6200B859F0 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		AF577CCC232430C300B859F0 /* ObjectDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetector.swift; sourceTree = "<group>"; };
+		AF577CD02324379D00B859F0 /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
+		AF5ADC5D2324BF9800816012 /* NetworkCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCommunication.swift; sourceTree = "<group>"; };
+		AF5ADC5F2324C48300816012 /* QRCodeGeneration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGeneration.swift; sourceTree = "<group>"; };
+		AF5ADC612324C50200816012 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		AF7BEBF523238AD300B22883 /* SwasteMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwasteMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7BEBF823238AD300B22883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,10 +83,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF48798E232459CF00015E16 /* UserSession */ = {
+			isa = PBXGroup;
+			children = (
+				AF48798F232459F200015E16 /* UserSession.swift */,
+				AF5ADC5D2324BF9800816012 /* NetworkCommunication.swift */,
+			);
+			path = UserSession;
+			sourceTree = "<group>";
+		};
 		AF577CBD2324268000B859F0 /* ApplicationLifeCycle */ = {
 			isa = PBXGroup;
 			children = (
 				AF7BEBF823238AD300B22883 /* AppDelegate.swift */,
+				AF5ADC612324C50200816012 /* QRCodeViewController.swift */,
 				AF7BEBFA23238AD300B22883 /* SceneDelegate.swift */,
 			);
 			path = ApplicationLifeCycle;
@@ -80,6 +108,37 @@
 				AF7BEBFC23238AD300B22883 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF577CC723242F5A00B859F0 /* MLClassifierModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLClassifierModel;
+			sourceTree = "<group>";
+		};
+		AF577CCB232430AB00B859F0 /* Detector */ = {
+			isa = PBXGroup;
+			children = (
+				AF577CCC232430C300B859F0 /* ObjectDetector.swift */,
+			);
+			path = Detector;
+			sourceTree = "<group>";
+		};
+		AF577CCE232435DB00B859F0 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				AF7BEC4A2323EAAD00B22883 /* SocketCommunicator.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		AF577CD2232437A300B859F0 /* InfoCardView */ = {
+			isa = PBXGroup;
+			children = (
+				AF577CD02324379D00B859F0 /* InfoCard.swift */,
+			);
+			path = InfoCardView;
 			sourceTree = "<group>";
 		};
 		AF7BEBEC23238AD200B22883 = {
@@ -103,10 +162,18 @@
 		AF7BEBF723238AD300B22883 /* SwasteMobile */ = {
 			isa = PBXGroup;
 			children = (
+				AF48798E232459CF00015E16 /* UserSession */,
+				AF577CD2232437A300B859F0 /* InfoCardView */,
+				AF577CCE232435DB00B859F0 /* Socket */,
+				AF577CCB232430AB00B859F0 /* Detector */,
+				AF577CC723242F5A00B859F0 /* MLClassifierModel */,
 				AF577CBE2324269100B859F0 /* ViewControllers */,
 				AF577CBD2324268000B859F0 /* ApplicationLifeCycle */,
-				AF7BEC4A2323EAAD00B22883 /* SocketCommunicator.swift */,
+				AF5ADC5F2324C48300816012 /* QRCodeGeneration.swift */,
+				AF577CC823242F6200B859F0 /* ImageClassifier.mlmodel */,
+				AF48798C2324584000015E16 /* green-checkmark.png */,
 				AF577CBF2324299F00B859F0 /* IMG_2373.jpg */,
+				AF577CC323242CE300B859F0 /* swaste-logo 2.png */,
 				AF7BEBFE23238AD300B22883 /* Main.storyboard */,
 				AF7BEC0123238AD500B22883 /* Assets.xcassets */,
 				AF7BEC0323238AD500B22883 /* LaunchScreen.storyboard */,
@@ -177,8 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7BEC0523238AD500B22883 /* LaunchScreen.storyboard in Resources */,
+				AF48798D2324584000015E16 /* green-checkmark.png in Resources */,
 				AF7BEC0223238AD500B22883 /* Assets.xcassets in Resources */,
 				AF577CC02324299F00B859F0 /* IMG_2373.jpg in Resources */,
+				AF577CC423242CE300B859F0 /* swaste-logo 2.png in Resources */,
 				AF7BEC0023238AD300B22883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,11 +301,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF577CCD232430C300B859F0 /* ObjectDetector.swift in Sources */,
+				AF577CCF2324360800B859F0 /* ImageClassifier.mlmodel in Sources */,
 				AF7BEBFD23238AD300B22883 /* MainViewController.swift in Sources */,
 				AF577CBC2324254100B859F0 /* SwasteConstants.swift in Sources */,
 				AF7BEC4B2323EAAD00B22883 /* SocketCommunicator.swift in Sources */,
+				AF5ADC602324C48300816012 /* QRCodeGeneration.swift in Sources */,
+				AF5ADC622324C50200816012 /* QRCodeViewController.swift in Sources */,
+				AF5ADC5E2324BF9800816012 /* NetworkCommunication.swift in Sources */,
 				AF7BEBF923238AD300B22883 /* AppDelegate.swift in Sources */,
+				AF487990232459F200015E16 /* UserSession.swift in Sources */,
 				AF7BEBFB23238AD300B22883 /* SceneDelegate.swift in Sources */,
+				AF577CD12324379D00B859F0 /* InfoCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +456,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA265E2E2BF615252A5276AE /* Pods-SwasteMobile.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9GZK3CLYY;
@@ -404,7 +479,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 299CAB6C93456A506940E679 /* Pods-SwasteMobile.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9GZK3CLYY;

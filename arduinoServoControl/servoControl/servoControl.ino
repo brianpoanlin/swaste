@@ -28,13 +28,13 @@ void loop() {
 void driveMotor(int input) {
   switch (input) {
     case 1:
-      servo1.write(90);
+      servo1.write(180);
       break;
     case 2:
-      servo2.write(90);
+      servo2.write(180);
       break;
     case 3:
-      servo3.write(90);
+      servo3.write(180);
       break;
     case 4:
       servo1.write(0);

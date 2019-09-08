@@ -23,10 +23,12 @@ class ViewController: NSViewController {
         socket?.delegate = self
         socket?.connect()
         
-        serialPort = ORSSerialPort(path: "/dev/cu.usbmodem14601")
+        serialPort = ORSSerialPort(path: "/dev/tty.usbmodem14501")
         serialPort?.baudRate = 9600
         serialPort?.delegate = self
         serialPort?.open()
+        
+        sendString("1")
     }
     
     func sendString(_ string: String) {

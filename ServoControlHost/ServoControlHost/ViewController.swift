@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        serialPort = ORSSerialPort(path: "/dev/cu.usbmodem14601")
+        serialPort = ORSSerialPort(path: "/dev/tty.usbmodem14501")
         serialPort?.baudRate = 9600
         serialPort?.delegate = self
         serialPort?.open()

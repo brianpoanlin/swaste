@@ -35,7 +35,7 @@ class SocketCommunicator: NSObject {
     }
     
     private func addHandlers() {
-        client.on("didUpdate") {[weak self] data, ack in
+        client.on("qrWasScanned") {[weak self] data, ack in
             self?.delegate?.didReceiveData(data: data)
         }
     }
