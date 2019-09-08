@@ -37,7 +37,7 @@ io.sockets.on('connection', function (socket) {
     }).on('qrScanned', function (data) {
         socket.broadcast.emit('qrWasScanned', data);
     });
-});s
+});
 
 /**
  * Listen on provided port, on all network interfaces.
